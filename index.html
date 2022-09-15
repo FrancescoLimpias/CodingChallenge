@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lim</title>
+
+    <!--  15/09/2022
+
+    Realizzato da Francesco Limpias,
+    progetto di ammissione per Boolean Careers
+
+    -->
+
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <img src="logo.png" alt="Lim Logo">
+      <h1>
+        Taking Booleaners from A to B
+      </h1>
+    </header>
+
+
+    <nav>
+      <button type="button" name="book">Prenota</button>
+      <button type="button" name="endBook">Termina Prenotazione</button>
+      <button type="button" name="lightsToggle">Accendi Luci</button>
+    </nav>
+
+
+    <!--
+    Main only contains the scooter list,
+    CSS rules will be written keeping this in mind -->
+    <main>
+
+      <!-- Perché sono stati usati <br> invece che <div>?
+
+      Mi sono reso conto che la struttura
+      di questi div.scooter (delle specie di "list item" con le varie informazioni)
+      era più facilmente accessibile da CSS
+      senza tanti "sottoinsiemi" formati da DIV.
+
+      -->
+      <div class="scooter">
+
+        <!-- name: numero dell'opzione scelta; value: identificativo univo ("targa") dello scooter -->
+        <input type="checkbox" name="scooter0" value="scooter#1456">
+        <h2>Gino22</h2>
+        <br>
+
+        <!-- location -->
+        <span>Via Guadalametri - a 220 metri da te</span>
+        <br>
+
+        <!-- charging status -->
+        <span><!-- Span text defined by css --></span>
+        <br>
+        <div class="chargeMedium"></div>
+
+      </div>
+
+
+      <div class="scooter">
+
+        <!-- name: numero dell'opzione scelta; value: identificativo univo ("targa") dello scooter -->
+        <!-- checked just for demonstration -->
+        <input type="checkbox" name="scooter1" value="scooter#2747" checked>
+        <h2>Mike24</h2>
+        <br>
+
+        <!-- location -->
+        <span>Via Rossini - a 320 metri da te</span>
+        <br>
+
+        <!-- charging status -->
+        <span><!-- Span text defined by css --></span>
+        <br>
+        <div class="chargeHigh"></div>
+
+      </div>
+
+
+      <div class="scooter">
+
+        <!-- name: numero dell'opzione scelta; value: identificativo univo ("targa") dello scooter -->
+        <input type="checkbox" name="scooter2" value="scooter#2945">
+        <h2>Fede154</h2>
+        <br>
+
+        <!-- location -->
+        <span>Via Ricciardoni - a 940 metri da te</span>
+        <br>
+
+        <!-- charging status -->
+        <span><!-- Span text defined by css --></span>
+        <br>
+        <div class="chargeLow"></div>
+
+      </div>
+
+
+      <div class="scooter">
+
+        <!-- name: numero dell'opzione scelta; value: identificativo univo ("targa") dello scooter -->
+        <input type="checkbox" name="scooter3" value="scooter#8412">
+        <h2>Bryan33</h2>
+        <br>
+
+        <!-- location -->
+        <span>Via della Fonderia - a 10 metri da te</span>
+        <br>
+
+        <!-- charging status -->
+        <span><!-- Span text defined by css --></span>
+        <br>
+        <div></div>
+
+      </div>
+
+
+    </main>
+  </body>
+</html>

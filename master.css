@@ -1,0 +1,168 @@
+/* COMMON */
+/*
+  accent color: #00dd00 (bright green)
+
+  charge High: #1ec31e (green)
+  charge Medium: #FEB45 (yellow)
+  charge Low: #be4141 (red)
+
+*/
+
+/* SETUP */
+*{
+  box-sizing: border-box;
+}
+
+html{
+  /* Overall background setup */
+  background: white url("background.jpg") no-repeat right top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body{
+  /* Opacity */
+  background-color: rgba(0,0,0, 0.5);
+
+  /* Sizing */
+  padding: 5%;
+  width: 62%;
+  margin: 1% auto;
+  border-radius: 15px;
+
+  /* Text settings */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* HEADER */
+header{
+  text-align: center;
+  color: #00dd00;
+}
+
+header > img{
+  margin-top: 2%;
+  width: 24%;
+}
+
+header > h1{
+  margin: 0px;
+  font-size: 1.8vw;
+}
+
+
+/* NAVIGATION PANEL */
+nav{
+  /* Background */
+  background-color: #00dd00;
+
+  /* Sizing */
+  padding: 1%;
+  border-radius: 2px;
+
+  /* Text settings */
+  line-height: 2%;
+  text-align: center;
+}
+
+nav > button{
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+
+/* MAIN PANEL */
+main{
+  color: white;
+}
+
+/* Creata la classe scooter
+per facilità di selezione dei suoi figli */
+.scooter{
+  margin-top: 3%;
+  line-height: 140%;
+  border-radius: 15px;
+  padding: 2%;
+}
+.scooter:hover{
+  background-color: rgba(0,0,0,0.3);
+}
+
+.scooter > input{
+  margin: 0px;
+  height: 2%;
+}
+
+.scooter > h2{
+  display: inline-block;
+  margin: 0px;
+
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.scooter > h2:before{
+  content: "Monopattino ";
+}
+
+.scooter span{
+  font-size: 0.9em;
+  font-weight: 100;
+}
+.scooter span:nth-child(4):before {
+  /* \2192 = arrow to right */
+  content: "\2192       ";
+}
+.scooter span:nth-child(6):before {
+  content: "Stato Carica:";
+}
+
+/* Charging status */
+.scooter > div{
+
+  /* General sizing */
+  display: inline-block;
+  margin-top: 6px;
+  border-radius: 7px;
+  min-height: 20px;
+  padding: 0.5%;
+
+  /* Text Settings */
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Unknown charging status */
+  min-width: 2%;
+  background-color: gray;
+  color: black;
+}
+.scooter:hover > div{
+  border: 2px solid white;
+}
+
+/* CHARGING LEVELS */
+.chargeLow{
+  background-color: #be4141 !important;
+  width: 15%;
+}
+.chargeLow:before{
+  content: "> 15%";
+}
+
+.chargeMedium{
+  background-color: #FEB453 !important;
+  width: 32%;
+}
+.chargeMedium:before{
+  content: ">> 60%";
+}
+
+.chargeHigh{
+  background-color: #1ec31e !important;
+  width: 50%;
+}
+.chargeHigh:before{
+  content: ">>> 100%";
+}
