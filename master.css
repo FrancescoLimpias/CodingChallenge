@@ -15,7 +15,7 @@
 
 html{
   /* Overall background setup */
-  background: white url("background.jpg") no-repeat right top;
+  background: white url("img/background.jpg") no-repeat right top;
   background-size: cover;
   background-attachment: fixed;
 }
