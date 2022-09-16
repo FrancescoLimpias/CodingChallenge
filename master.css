@@ -89,11 +89,13 @@ per facilità di selezione dei suoi figli */
   background-color: rgba(0,0,0,0.3);
 }
 
+/* checkbox */
 .scooter > input{
   margin: 0px;
   height: 2%;
 }
 
+/* scooter name */
 .scooter > h2{
   display: inline-block;
   margin: 0px;
@@ -109,10 +111,12 @@ per facilità di selezione dei suoi figli */
   font-size: 0.9em;
   font-weight: 100;
 }
+/* location */
 .scooter span:nth-child(4):before {
   /* \2192 = arrow to right */
   content: "\2192       ";
 }
+/* charge status */
 .scooter span:nth-child(6):before {
   content: "Stato Carica:";
 }
